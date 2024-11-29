@@ -1,0 +1,90 @@
+  /* Base Styles */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: black;
+    color: #f0f0f0;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Calculator Dark Mode */
+.calculator.dark-mode {
+    background-color: #2C3A47;
+    color: #f0f0f0;
+}
+
+.calculator input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Input Dark Mode */
+.dark-mode .calculator input {
+    background-color: #666;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+.calculator button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #018786;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator button:hover {
+    background-color: #BB86FC;
+}
+
+.toggle-button {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #018786;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #BB86FC;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
